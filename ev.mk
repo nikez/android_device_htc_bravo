@@ -19,7 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_bravo BUILD_FINGERPRINT=htc_wwe
 # Set up the product codename, build version & MOTD.
 #
 PRODUCT_CODENAME := Lente
-PRODUCT_VERSION_DEVICE_SPECIFIC := a7
+PRODUCT_VERSION_DEVICE_SPECIFIC := b2
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for installing Nikez Lente! Credits goes to Evervolv.\n------------------------------------------------\n"
 
@@ -29,12 +29,6 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 PRODUCT_PACKAGES += \
     Camera 
 
-# Extra RIL settings
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.enable.managed.roaming=1 \
-    ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995 \
-    ro.ril.emc.mode=2
-
 # Use the n1 stock boot animation until we get a custom evervolv one.
 PRODUCT_COPY_FILES += \
-    device/htc/passion/extras/bootanimation_passion_ics.zip:system/media/bootanimation.zip
+    device/htc/bravo/extras/bootanimation.zip:system/media/bootanimation.zip

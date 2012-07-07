@@ -43,15 +43,12 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>160</item>
-        <item>225</item>
-        <item>320</item>
-        <item>640</item>
-        <item>1280</item>
-        <item>2600</item>
-        <item>5800</item>
-        <item>8000</item>
-        <item>10240</item>
+        <item>200</item>
+        <item>400</item>
+        <item>700</item>
+        <item>1400</item>
+        <item>2000</item>
+        <item>3000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -59,13 +56,10 @@
          than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>40</item>
-        <item>40</item>
-        <item>55</item>
-        <item>65</item>
-        <item>80</item>
+        <item>50</item>
+        <item>70</item>
         <item>100</item>
-        <item>120</item>
+        <item>130</item>
         <item>160</item>
         <item>200</item>
         <item>255</item>
@@ -154,7 +148,7 @@
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
     <string-array translatable="false" name="config_tether_usb_regexs">
-<!--        <item>"usb0"</item>-->
+        <item>"usb0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
