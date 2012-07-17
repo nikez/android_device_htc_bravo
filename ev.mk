@@ -1,5 +1,6 @@
 # Call this first so apn list is actually copied
 $(call inherit-product, vendor/ev/config/gsm.mk)
+
 $(call inherit-product, device/htc/bravo/full_bravo.mk)
 
 # Inherit some common evervolv stuff.
@@ -19,7 +20,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_bravo BUILD_FINGERPRINT=htc_wwe
 # Set up the product codename, build version & MOTD.
 #
 PRODUCT_CODENAME := Lente
-PRODUCT_VERSION_DEVICE_SPECIFIC := b3
+PRODUCT_VERSION_DEVICE_SPECIFIC := b1
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for installing Nikez Lente! Credits goes to Evervolv.\n------------------------------------------------\n"
 
@@ -27,8 +28,8 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 # Extra Packages
 #
 PRODUCT_PACKAGES += \
-    Camera 
+    Camera
 
-# Use the n1 stock boot animation until we get a custom evervolv one.
+#Boot animation
 PRODUCT_COPY_FILES += \
     device/htc/bravo/extras/bootanimation.zip:system/media/bootanimation.zip

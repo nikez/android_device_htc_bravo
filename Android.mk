@@ -18,5 +18,3 @@ subdir_makefiles := \
 	$(LOCAL_PATH)/liblights/Android.mk
 
 include $(subdir_makefiles)
-
-

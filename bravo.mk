@@ -87,15 +87,9 @@ PRODUCT_COPY_FILES += \
     device/htc/bravo/vold.fstab:system/etc/vold.fstab \
     device/htc/bravo/sysctl.conf:system/etc/sysctl.conf
 
-# Prebuilt modules
-ifeq (,$(BUILD_KERNEL))
-PRODUCT_COPY_FILES += \
-    device/htc/bravo/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
-endif
-
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # media config xml file
 PRODUCT_COPY_FILES += \

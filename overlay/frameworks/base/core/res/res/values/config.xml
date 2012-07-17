@@ -113,7 +113,11 @@
     <!-- Default blink frequency for notification LED is 9 seconds. -->
     <integer name="config_defaultNotificationLedOff">4000</integer>
 
+    <!-- Package name providing network location support. -->
+    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location</string>
 
+    <!-- Package name providing geocoder API support. -->
+    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location</string>
 
     <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
          [associated radio-type],[priority],[restoral-timer(ms)],[dependencyMet]  -->
@@ -129,7 +133,6 @@
         <item>"mobile_dun,4,0,4,60000,true"</item>
         <item>"mobile_hipri,5,0,3,60000,true"</item>
         <item>"mobile_bluetooth,7,7,1,-1,true"</item>
-<!--        <item>"wifi_p2p,13,1,0,-1,true"</item>-->
     </string-array>
 
     <!-- An Array of "[ConnectivityManager connectionType],
@@ -151,7 +154,7 @@
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
     <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"wl0.1"</item>
+        <item>"wlan0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
@@ -209,10 +212,5 @@
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">false</bool>
 
-    <!-- Component name of the service providing network location support. -->
-    <add-resource type="string" name="config_networkLocationProvider">com.google.android.location.NetworkLocationProvider</add-resource>
-
-    <!-- Component name of the service providing geocoder API support. -->
-    <add-resource type="string" name="config_geocodeProvider">com.google.android.location.GeocodeProvider</add-resource>
 </resources>
 
